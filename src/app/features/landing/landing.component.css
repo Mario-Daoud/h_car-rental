@@ -1,0 +1,72 @@
+.container {
+  min-height: calc(100vh - 100px);
+  display: flex;
+  align-items: center;
+}
+
+.col-md-7 img {
+  width: 100%;
+  height: auto;
+}
+
+.col-md-5 {
+  padding-top: 2rem;
+}
+
+.col-md-5 h5 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 0.2;
+  margin-bottom: 5px;
+}
+
+.col-md-5 h1 {
+  color: #010103;
+  font-family: "Poppins", sans-serif;
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1.2rem;
+  margin-top: 1rem;
+}
+
+.col-md-5 span {
+  color: #ff3715;
+  font-size: 3.5rem;
+}
+
+.col-md-5 p {
+  color: #706f7b;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.1em;
+  margin-bottom: 2rem;
+}
+
+.btn-primary {
+  background-color: #ff3715;
+  color: white;
+  margin-right: 15px;
+  box-shadow: 0px 4px 8px -3px #ff3715;
+}
+
+.learn-more {
+  background-color: black;
+  color: white;
+  border: 1px solid black !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.learn-more:hover {
+  background-color: transparent;
+  color: black;
+}
+
+.learn-more,
+.btn-primary {
+  padding: 1rem 3rem;
+  border-radius: 3px;
+  border: none;
+  font-weight: bold;
+  font-size: 0.94em;
+}
