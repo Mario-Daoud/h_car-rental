@@ -1,13 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LandingComponent } from './landing/landing.component';
-import { HomepageComponent } from './homepage/homepage.component';
 import { PlanTripComponent } from './plan-trip/plan-trip.component';
 import { PromobannerComponent } from './promobanner/promobanner.component';
+import { HomepageWrapComponent } from './homepage-wrap/homepage-wrap.component';
 
 @NgModule({
-  declarations: [LandingComponent, HomepageComponent, PlanTripComponent, PromobannerComponent],
+  declarations: [
+    LandingComponent,
+    PlanTripComponent,
+    PromobannerComponent,
+    HomepageWrapComponent,
+  ],
   imports: [CommonModule],
-  exports: [HomepageComponent],
+  exports: [HomepageWrapComponent],
 })
 export class HomepageModule {}
