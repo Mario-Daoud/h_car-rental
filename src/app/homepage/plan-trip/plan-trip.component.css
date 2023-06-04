@@ -1,0 +1,30 @@
+.container {
+  text-align: center;
+  width: 100%;
+  font-family: "Rubik", sans-serif;
+}
+
+h1 {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.detail-images div h3 {
+  font-weight: bold;
+  font-size: 1.6em;
+  margin-bottom: 20px;
+}
+
+.detail-images div p {
+  font-size: 0.9em;
+}
+
+.detail-images img {
+  height: 175px;
+  width: 175px;
+  transition: transform 0.5s ease;
+}
+
+.detail-images img:hover {
+  transform: scale(1.1);
+}
