@@ -1,0 +1,56 @@
+[
+  {
+    "model": "Vantage S",
+    "mark": "Aston Martin",
+    "year": 2018,
+    "doors": 2,
+    "ac": true,
+    "transmission": "Automatic",
+    "fuel": "Electric"
+  },
+  {
+    "model": "Sportage",
+    "mark": "KIA",
+    "year": 2017,
+    "doors": 4,
+    "ac": true,
+    "transmission": "Manual",
+    "fuel": "Diesel"
+  },
+  {
+    "model": "Quattroporte",
+    "mark": "Maserati",
+    "year": 2019,
+    "doors": 4,
+    "ac": true,
+    "transmission": "Automatic",
+    "fuel": "Petrol"
+  },
+  {
+    "model": "Kangoo",
+    "mark": "Renault",
+    "year": 2013,
+    "doors": 4,
+    "ac": false,
+    "transmission": "Manual",
+    "fuel": "Petrol"
+  },
+  {
+    "model": "Range Rover",
+    "mark": "Land Rover",
+    "year": 2014,
+    "doors": 4,
+    "ac": true,
+    "transmission": "Manual",
+    "fuel": "Diesel"
+  },
+  {
+    "model": "S60 Cross Country",
+    "mark": "Volvo",
+    "year": 2016,
+    "doors": 4,
+    "ac": true,
+    "transmission": "Automatic",
+    "fuel": "Petrol"
+  }
+]
