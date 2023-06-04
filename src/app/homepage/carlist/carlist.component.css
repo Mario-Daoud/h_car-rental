@@ -1,0 +1,128 @@
+.container {
+  margin-top: 70px;
+}
+
+.headerText {
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+}
+
+.headertext h4,
+.headerText h1 {
+  font-weight: bold;
+}
+
+.headerText p {
+  padding-inline: 30%;
+}
+
+.carDisplay {
+  height: 500px;
+  display: flex;
+  align-items: center;
+}
+
+.carList {
+  height: max-content;
+}
+
+.carList div {
+  width: 100%;
+  height: 100%;
+  background-color: #e9e9e9;
+  padding-left: 10%;
+  margin: 7px;
+  padding-top: 5px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  transition: all 0.5s ease;
+}
+
+.carList div h5 {
+  font-size: 1.3rem;
+}
+
+.carList div:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #ff3715 !important;
+}
+
+.active {
+  color: white;
+  background-color: #ff3715 !important;
+}
+
+.carImage {
+  display: flex;
+  align-items: center;
+  max-height: 100%;
+}
+
+.carImage img {
+  max-height: 100%;
+  max-width: 100%;
+  padding: 2rem;
+}
+
+.carInfo h5 {
+  background-color: #ff3715;
+  margin-bottom: 0;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding-left: 10%;
+  color: white;
+  font-weight: 300;
+  font-size: 1.5rem;
+  font-family: "Rubik", sans-serif;
+}
+
+.carInfo h5 span {
+  font-weight: bold;
+  padding-right: 6px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table tr {
+  border: 2px solid black;
+}
+
+table td {
+  text-align: center;
+  padding: 7px;
+  position: relative;
+}
+
+table td:first-child::before {
+  content: "";
+  position: absolute;
+  top: 10%;
+  right: 0;
+  height: 70%;
+  width: 2px;
+  background-color: black;
+}
+
+.bookRide {
+  height: 50px;
+  width: 100%;
+  background-color: #ff3715;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  display: grid;
+  place-items: center;
+  margin-top: 8px;
+  font-family: "Rubik", sans-serif;
+}
+
+.bookRide:hover {
+  cursor: pointer;
+}

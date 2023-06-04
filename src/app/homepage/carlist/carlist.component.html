@@ -1,0 +1,65 @@
+<div class="container">
+  <div class="headerText">
+    <h3>Vehicle Models</h3>
+    <h1>Our rental fleet</h1>
+    <p>
+      Choose from a variety of our amazing vehicles to rent for your next
+      adventure or business trip
+    </p>
+  </div>
+
+  <div class="carDisplay row">
+    <div class="carList col-lg-3 col-md-12">
+      <div
+        *ngFor="let car of cars | async"
+        [ngClass]="{ active: car === activeCar }"
+        (click)="displayCar(car)"
+      >
+        <h5>{{ car.mark }} {{ car.model }}</h5>
+      </div>
+    </div>
+    <div class="col-lg-6 col-md-12 carImage">
+      <img [src]="carImage" alt="carImage" />
+    </div>
+    <div class="carInfo col-lg-3 col-md-12">
+      <h5>
+        <span>${{ activeCar.price }}</span> rent /day
+      </h5>
+      <div class="details">
+        <table>
+          <tr>
+            <td>Model</td>
+            <td>{{ activeCar.model }}</td>
+          </tr>
+          <tr>
+            <td>Mark</td>
+            <td>{{ activeCar.mark }}</td>
+          </tr>
+          <tr>
+            <td>Year</td>
+            <td>{{ activeCar.year }}</td>
+          </tr>
+          <tr>
+            <td>Doors</td>
+            <td>{{ activeCar.doors }}</td>
+          </tr>
+          <tr>
+            <td>AC</td>
+            <td>{{ activeCar.ac ? "Yes" : "No" }}</td>
+          </tr>
+          <tr>
+            <td>Transmission</td>
+            <td>{{ activeCar.transmission }}</td>
+          </tr>
+          <tr>
+            <td>Fuel</td>
+            <td>{{ activeCar.fuel }}</td>
+          </tr>
+        </table>
+      </div>
+      <div class="bookRide">
+        <a>Book Ride Now</a>
+      </div>
+    </div>
+  </div>
+</div>

@@ -6,7 +6,8 @@
     "doors": 2,
     "ac": true,
     "transmission": "Automatic",
-    "fuel": "Electric"
+    "fuel": "Electric",
+    "price": 50
   },
   {
     "model": "Sportage",
@@ -15,7 +16,8 @@
     "doors": 4,
     "ac": true,
     "transmission": "Manual",
-    "fuel": "Diesel"
+    "fuel": "Diesel",
+    "price": 100
   },
   {
     "model": "Quattroporte",
@@ -24,7 +26,8 @@
     "doors": 4,
     "ac": true,
     "transmission": "Automatic",
-    "fuel": "Petrol"
+    "fuel": "Petrol",
+    "price": 60
   },
   {
     "model": "Kangoo",
@@ -33,7 +36,8 @@
     "doors": 4,
     "ac": false,
     "transmission": "Manual",
-    "fuel": "Petrol"
+    "fuel": "Petrol",
+    "price": 70
   },
   {
     "model": "Range Rover",
@@ -42,7 +46,8 @@
     "doors": 4,
     "ac": true,
     "transmission": "Manual",
-    "fuel": "Diesel"
+    "fuel": "Diesel",
+    "price": 90
   },
   {
     "model": "S60 Cross Country",
@@ -51,6 +56,7 @@
     "doors": 4,
     "ac": true,
     "transmission": "Automatic",
-    "fuel": "Petrol"
+    "fuel": "Petrol",
+    "price": 80
   }
 ]

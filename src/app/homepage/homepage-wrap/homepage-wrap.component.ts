@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
   template: `
     <app-landing></app-landing>
     <app-plan-trip></app-plan-trip>
+    <app-carlist></app-carlist>
     <app-promobanner></app-promobanner>
   `,
   styles: [],
