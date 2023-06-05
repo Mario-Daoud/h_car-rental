@@ -6,6 +6,7 @@ import { PromobannerComponent } from './promobanner/promobanner.component';
 import { HomepageWrapComponent } from './homepage-wrap/homepage-wrap.component';
 import { CarlistComponent } from './carlist/carlist.component';
 import { CoreModule } from '../core/core.module';
+import { FormComponent } from './form/form.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { CoreModule } from '../core/core.module';
     PromobannerComponent,
     HomepageWrapComponent,
     CarlistComponent,
+    FormComponent,
   ],
   imports: [CommonModule, CoreModule],
   exports: [HomepageWrapComponent],
