@@ -11,10 +11,6 @@ export class CityService {
   API_URL = '/assets/cityData.json';
 
   getCities(): Observable<City[]> {
-    return this.http.get<City[]>(this.API_URL).pipe(
-      tap((result) => {
-        console.log('opgehaalde data :', result);
-      })
-    );
+    return this.http.get<City[]>(this.API_URL);
   }
 }

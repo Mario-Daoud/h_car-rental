@@ -21,9 +21,9 @@
     <div class="col-lg-6 col-md-12 carImage">
       <img [src]="carImage" alt="carImage" />
     </div>
-    <div class="carInfo col-lg-3 col-md-12">
+    <div class="carInfo col-lg-3 col-md-12" *ngIf="activeCar">
       <h5>
-        <span>${{ activeCar }}</span> rent /day
+        <span>${{ activeCar.price }}</span> rent /day
       </h5>
       <div class="details">
         <table>

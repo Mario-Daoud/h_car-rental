@@ -9,10 +9,6 @@ export class CarService {
   API_URL = '/assets/carData.json';
 
   getCars(): Observable<Car[]> {
-    return this.http.get<Car[]>(this.API_URL).pipe(
-      tap((result) => {
-        console.log('opgehaalde data :', result);
-      })
-    );
+    return this.http.get<Car[]>(this.API_URL);
   }
 }

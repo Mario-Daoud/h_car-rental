@@ -42,6 +42,8 @@
 
 .carList div h5 {
   font-size: 1.3rem;
+  word-wrap: break-word;
+  padding: 5px;
 }
 
 .carList div:hover {
