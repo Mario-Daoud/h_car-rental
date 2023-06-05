@@ -1,7 +1,7 @@
 # Car Rental
-Car rental landing page remake of: https://car-rental-ten.vercel.app/ made by Stefan Topalovic.
-Not an in-depth remake, just the home page
-Used dummy data
+<p>Car rental landing page remake of: https://car-rental-ten.vercel.app/ made by Stefan Topalovic.</p>
+<p>Not an in-depth remake, just the home page</p>
+<p>Used dummy data</p>
 
 # Preview
 #### Landing page
