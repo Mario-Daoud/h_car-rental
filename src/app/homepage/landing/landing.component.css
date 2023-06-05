@@ -49,6 +49,7 @@
   margin-right: 15px;
   box-shadow: 0px 4px 8px -3px #ff3715;
   transition: all 0.3s ease;
+  margin-bottom: 7px;
 }
 
 .btn-primary:hover {
