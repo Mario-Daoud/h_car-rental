@@ -1,65 +1,73 @@
-<div class="container">
-  <h3>Book a car</h3>
-  <div class="form">
-    <form action="post">
-      <div class="cartype">
-        <label><i class="fa-solid fa-car"></i> &nbsp; Select Car Type</label>
-        <select>
-          <option value="" selected disabled hidden>Select car type</option>
-          <option *ngFor="let car of cars | async" value="{{ car.model }}">
-            {{ car.model }}
-          </option>
-        </select>
-      </div>
+<div class="wrap">
+  <div class="container">
+    <h3>Book a car</h3>
+    <div class="form">
+      <form action="post">
+        <div class="cartype">
+          <label><i class="fa-solid fa-car"></i> &nbsp; Select Car Type</label>
+          <select>
+            <option value="" selected disabled hidden>Select car type</option>
+            <option *ngFor="let car of cars | async" value="{{ car.model }}">
+              {{ car.model }}
+            </option>
+          </select>
+        </div>
 
-      <div class="pickUpPoint">
-        <label
-          ><i class="fa-solid fa-location-dot"></i> &nbsp; Pick-up
-          Location</label
-        >
-        <select>
-          <option value="" selected disabled hidden>
-            Select pick up location
-          </option>
-          <option *ngFor="let city of cities | async" value="{{ city.name }}">
-            {{ city.name }}
-          </option>
-        </select>
-      </div>
+        <div class="pickUpPoint">
+          <label
+            ><i class="fa-solid fa-location-dot"></i> &nbsp; Pick-up
+            Location</label
+          >
+          <select>
+            <option value="" selected disabled hidden>
+              Select pick up location
+            </option>
+            <option *ngFor="let city of cities | async" value="{{ city.name }}">
+              {{ city.name }}
+            </option>
+          </select>
+        </div>
 
-      <div class="dropOffPoint">
-        <label
-          ><i class="fa-solid fa-location-dot"></i> &nbsp; Drop-off
-          Location</label
-        >
-        <select>
-          <option value="" selected disabled hidden>
-            Select drop off location
-          </option>
-          <option *ngFor="let city of cities | async" value="{{ city.name }}">
-            {{ city.name }}
-          </option>
-        </select>
-      </div>
+        <div class="dropOffPoint">
+          <label
+            ><i class="fa-solid fa-location-dot"></i> &nbsp; Drop-off
+            Location</label
+          >
+          <select>
+            <option value="" selected disabled hidden>
+              Select drop off location
+            </option>
+            <option *ngFor="let city of cities | async" value="{{ city.name }}">
+              {{ city.name }}
+            </option>
+          </select>
+        </div>
 
-      <div class="pickUpDate">
-        <label for="startDate"><i class="fa-regular fa-calendar-days "></i> &nbsp; Pick-up Date</label>
-        <input
-          type="date"
-          [min]="today"
-          #startDateInput
-          (change)="updateMinDate(startDateInput.value)"
-        />
-      </div>
+        <div class="pickUpDate">
+          <label for="startDate"
+            ><i class="fa-regular fa-calendar-days"></i> &nbsp; Pick-up
+            Date</label
+          >
+          <input
+            type="date"
+            [min]="today"
+            #startDateInput
+            (change)="updateMinDate(startDateInput.value)"
+          />
+        </div>
 
-      <div class="pickUpDate">
-        <label for="endDate"><i class="fa-regular fa-calendar-days "></i> &nbsp; Drop-off Date</label>
-        <input type="date" [min]="minDate" />
-      </div>
+        <div class="pickUpDate">
+          <label for="endDate"
+            ><i class="fa-regular fa-calendar-days"></i> &nbsp; Drop-off
+            Date</label
+          >
+          <input type="date" [min]="minDate" />
+        </div>
 
-      <div class="post">
-        <a type="submit">Book Now</a>
-      </div>
-    </form>
+        <div class="post">
+          <a type="submit">Book Now</a>
+        </div>
+      </form>
+    </div>
   </div>
 </div>

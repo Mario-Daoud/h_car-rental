@@ -9,7 +9,6 @@ import { FormComponent } from './form/form.component';
 import { WhyusComponent } from './whyus/whyus.component';
 import { ReviewsComponent } from './reviews/reviews.component';
 import { FooterComponent } from './footer/footer.component';
-import { HomepageWrapComponent } from './homepage-wrap/homepage-wrap.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +20,6 @@ import { HomepageWrapComponent } from './homepage-wrap/homepage-wrap.component';
     WhyusComponent,
     ReviewsComponent,
     FooterComponent,
-    HomepageWrapComponent
   ],
   imports: [CommonModule, CoreModule],
   exports: [
@@ -33,7 +31,6 @@ import { HomepageWrapComponent } from './homepage-wrap/homepage-wrap.component';
     WhyusComponent,
     ReviewsComponent,
     FooterComponent,
-    HomepageWrapComponent
   ],
 })
 export class HomepageModule {}

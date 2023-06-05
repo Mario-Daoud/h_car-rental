@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ViewportScroller } from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -8,4 +9,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Car Rental';
 
+  constructor(private viewportScroller: ViewportScroller) {}
+
+  scrollToSection(sectionId: string) {
+    this.viewportScroller.scrollToAnchor(sectionId);
+  }
 }
