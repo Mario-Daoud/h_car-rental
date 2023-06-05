@@ -1,0 +1,88 @@
+.wrap {
+  padding-bottom: 150px;
+  width: 100vw;
+  background-color: #f8f8f8;
+  padding-top: 150px;
+}
+
+h5,
+h1,
+.description {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 50px;
+  letter-spacing: 1px;
+}
+
+.description {
+  width: 50%;
+  color: gray;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.userprofile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+}
+
+.userprofile img {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+}
+
+.userprofile h5 {
+  font-weight: bold;
+}
+
+.userprofile span i {
+  color: #ff3715;
+  font-size: 70px;
+}
+
+.userprofile div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reviewWrap {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 25px;
+  grid-auto-flow: dense;
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .reviewWrap {
+    grid-template-columns: auto;
+  }
+}
+
+.review {
+  border-radius: 5px;
+  width: 100%;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 0 50px 5px rgba(0, 0, 0, 0.2);
+}
+
+.reviewText {
+  font-size: 1.4rem;
+  line-height: 1.7;
+  font-weight: 500;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 20px;
+}

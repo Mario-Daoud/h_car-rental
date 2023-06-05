@@ -7,6 +7,8 @@ import { HomepageWrapComponent } from './homepage-wrap/homepage-wrap.component';
 import { CarlistComponent } from './carlist/carlist.component';
 import { CoreModule } from '../core/core.module';
 import { FormComponent } from './form/form.component';
+import { WhyusComponent } from './whyus/whyus.component';
+import { ReviewsComponent } from './reviews/reviews.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +18,8 @@ import { FormComponent } from './form/form.component';
     HomepageWrapComponent,
     CarlistComponent,
     FormComponent,
+    WhyusComponent,
+    ReviewsComponent,
   ],
   imports: [CommonModule, CoreModule],
   exports: [HomepageWrapComponent],

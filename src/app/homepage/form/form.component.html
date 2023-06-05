@@ -3,7 +3,7 @@
   <div class="form">
     <form action="post">
       <div class="cartype">
-        <label>Select Car Type</label>
+        <label><i class="fa-solid fa-car"></i> &nbsp; Select Car Type</label>
         <select>
           <option value="" selected disabled hidden>Select car type</option>
           <option *ngFor="let car of cars | async" value="{{ car.model }}">
@@ -13,7 +13,10 @@
       </div>
 
       <div class="pickUpPoint">
-        <label>Pick-up Location</label>
+        <label
+          ><i class="fa-solid fa-location-dot"></i> &nbsp; Pick-up
+          Location</label
+        >
         <select>
           <option value="" selected disabled hidden>
             Select pick up location
@@ -25,7 +28,10 @@
       </div>
 
       <div class="dropOffPoint">
-        <label>Drop-off Location</label>
+        <label
+          ><i class="fa-solid fa-location-dot"></i> &nbsp; Drop-off
+          Location</label
+        >
         <select>
           <option value="" selected disabled hidden>
             Select drop off location
@@ -37,7 +43,7 @@
       </div>
 
       <div class="pickUpDate">
-        <label for="startDate">Pick-up Date</label>
+        <label for="startDate"><i class="fa-regular fa-calendar-days "></i> &nbsp; Pick-up Date</label>
         <input
           type="date"
           [min]="today"
@@ -47,7 +53,7 @@
       </div>
 
       <div class="pickUpDate">
-        <label for="endDate">Drop-off Date</label>
+        <label for="endDate"><i class="fa-regular fa-calendar-days "></i> &nbsp; Drop-off Date</label>
         <input type="date" [min]="minDate" />
       </div>
 

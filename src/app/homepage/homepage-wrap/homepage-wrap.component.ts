@@ -8,6 +8,8 @@ import { Component } from '@angular/core';
     <app-plan-trip></app-plan-trip>
     <app-carlist></app-carlist>
     <app-promobanner></app-promobanner>
+    <app-whyus></app-whyus>
+    <app-reviews></app-reviews>
   `,
   styles: [],
 })

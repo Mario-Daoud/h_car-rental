@@ -28,9 +28,13 @@ export class FormComponent implements OnInit {
 
     const currentDate = new Date();
     this.today = currentDate.toISOString().split('T')[0];
+    this.minDate = this.today;
   }
 
   updateMinDate(date: string) {
+    if( this.minDate < this.today) {
+      this.minDate = this.today;
+    }
     this.minDate = date;
   }
 }
