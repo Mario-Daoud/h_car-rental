@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light">
+<nav class="navbar navbar-expand-lg navbar-light" id="header">
   <div class="container">
     <a class="navbar-brand" href="#">
       <img src="/assets/images/site_icon.png" />
@@ -47,5 +47,14 @@
 <app-promobanner></app-promobanner>
 <app-whyus id="meetus"></app-whyus>
 <app-reviews id="reviews"></app-reviews>
+
+<a
+  *ngIf="showButton"
+  class="scrollToTopButton"
+  [@fadeIn]
+  (click)="scrollToSection('header')"
+>
+  <i class="fa-solid fa-caret-up"></i>
+</a>
 
 <app-footer></app-footer>

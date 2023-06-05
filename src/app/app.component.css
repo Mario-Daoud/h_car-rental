@@ -80,3 +80,35 @@
   color: #ff3715;
   cursor: pointer;
 }
+
+.scrollToTopButton {
+  height: 50px;
+  width: 50px;
+  background-color: #ff3715;
+  border-radius: 3px;
+  position: fixed;
+  bottom: 35px;
+  right: 35px;
+  box-shadow: 0px 4px 8px -3px #ff3715;
+  transition: all 0.3s ease;
+  border: 3px solid white;
+  display: grid;
+  place-items: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.scrollToTopButton i {
+  color: white;
+  font-size: 40px;
+}
+
+.scrollToTopButton:hover {
+  box-shadow: 0px 6px 10px -3px #cc2d0f;
+  cursor: pointer;
+}
+
+.scrollToTopButton:active {
+  transform: scale(0.93);
+}
